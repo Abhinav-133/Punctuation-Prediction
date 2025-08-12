@@ -1,0 +1,19 @@
+from __future__ import annotations
+
+PAD_LABEL = "<PAD>"
+BASE_LABELS = ["O", "COMMA", "PERIOD", "SEMICOLON", "EXCLAMATIONMARK", "QUESTIONMARK"]
+PUNCT_LABELS = [PAD_LABEL] + BASE_LABELS
+
+LABEL_TO_CHAR = {
+    "O": "",
+    "COMMA": ",",
+    "PERIOD": ".",
+    "SEMICOLON": ";",
+    "EXCLAMATIONMARK": "!",
+    "QUESTIONMARK": "?",
+}
+
+END_LABELS = {"PERIOD", "EXCLAMATIONMARK", "QUESTIONMARK", "SEMICOLON"}
+
+PAD_TOKEN = "<pad>"
+UNK_TOKEN = "<unk>"

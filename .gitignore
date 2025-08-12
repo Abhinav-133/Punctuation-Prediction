@@ -1,0 +1,78 @@
+# -------------------------
+# OS / editor junk
+# -------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# Models / checkpoints / large artifacts
+# -------------------------
+runs/
+checkpoints/
+wandb/
+lightning_logs/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.npz
+*.onnx
+
+# -------------------------
+# Outputs & generated results
+# -------------------------
+outputs/
+results/
+
+# -------------------------
+# Embeddings (often huge)
+# -------------------------
+embeddings/
+!embeddings/README.md
+
+# -------------------------
+# Data (common generated files)
+# -------------------------
+data/processed/
+data/**/*.jsonl
+data/**/*.csv
+
+# If you keep a small README for data, allow it:
+!data/README.md
+
+# -------------------------
+# ALL .txt files (as requested)
+# -------------------------
+# This will ignore every *.txt everywhere (e.g., data/*.txt, embeddings/*.txt, etc.)
+# but keep requirement and doc files you probably want under version control.
+*.txt
+!requirements.txt
+!requirements-*.txt
+!README.txt
+!LICENSE*
+!*.md
+!.gitignore
+
+# If you need to keep any specific text file, whitelist it like this:
+# !path/to/keep_me.txt
